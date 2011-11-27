@@ -72,7 +72,11 @@ body{
 
 
 .headline .contact-button{
-    margin-right:20px
+    margin-right:10px
+}
+
+.headline .signup-button{
+    margin-left:10px
 }
 
 
