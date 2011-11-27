@@ -1,0 +1,189 @@
+/* Reset styles 
+  ====================*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #333;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Unviersal 
+  ====================*/
+.container{
+    width: 100%;
+}
+
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+a, a:visited { color: #fff; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #ccc; }
+p a, p a:visited { line-height: inherit; }
+
+
+
+
+/* Header 
+  ====================*/
+#header{
+    z-index: 10000;
+    color: #fff;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: #333;
+    background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#111));
+    background: -moz-linear-gradient(top,#333,#111);
+    border-bottom: 1px solid #eee;
+}
+
+#header img{
+    float: left;
+    height: 98%;
+    padding-top: 4px;
+}
+
+#header .login{
+    color: #fff;
+    float: right;
+    padding-top: 9px;    
+}
+
+
+
+
+/* Content 
+  ====================*/
+#content{
+    position: absolute; 
+    top: 40px; 
+    width: 100%;
+    
+}
+
+#main_blue{
+    color: #333;
+    background: #fff;
+    width: 100%;
+    background-image: url(/img/blue_back.png);
+    background-repeat:repeat-x;
+    min-height: 200px;
+}
+
+.content-block{
+    padding-top: 20px;
+
+}
+
+.content-block .left{
+    width: 50%;
+    float: left;
+    border: 1px #ccc;
+}
+
+.content-block .right{
+    width: 50%;
+    float: left;
+    border: 1px #ccc;
+}
+
+
+
+/* Footer 
+  ====================*/
+#footer{
+    width: 100%;
+    height: 40px;
+    background: #333;
+}
+
+#footer img{
+
+    float: left;
+    height: 98%;
+    padding-top: 4px;
+}
+
+#footer .login{
+    color: #fff;
+    float: right;
+    padding-top: 9px;    
+}
+
+#wheat{
+    background-image: url(/img/wheat.jpg);
+    height: 40px;    
+    width: 100%;
+}
+
+
+
+/* Responsiveness 
+  ====================*/
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    
+}
+
+
+
+/* Landscape tablet */
+@media screen and (max-width: 1023px) {
+    .wrapper{
+        width: 700px;
+    }
+}
+
+
+/* Portrait tablet */
+@media screen and (max-width: 767px) {
+  
+  .wrapper {
+    width: 94%;
+  }
+}
+
+
+
+@media screen and (max-width: 479px) {
+
+}
+
+
+
+
+
+
