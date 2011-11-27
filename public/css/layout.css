@@ -26,15 +26,17 @@ body{
 #main{
     color: #fff;
     width: 100%;
-    /*background-image: url(/img/blue_back.png);
-    background-repeat:repeat-x;*/
     background-image: url(/img/stitch.png);
     background-color: #469bad;
     padding-top: 40px;
 }
 
 .headline{
-    height: 350px
+    height: 350px;
+    
+    background-image: url(/img/tree_small.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 
@@ -56,14 +58,7 @@ body{
     z-index: 1;
 }
 
-.headline .tree{
-    padding-top: 10px;
-    height: 340px;
-    position: relative;
-    top: 0px;
-    left: -150px;
-    z-index: 0;
-}
+
 
 .headline .buttons{
     text-align: center; 
@@ -215,9 +210,6 @@ footer .copy{
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-        #main .tree{
-            left: -190px;
-        }
         #main h1{
             font-size: 40px;
             line-height: 1;
@@ -228,8 +220,8 @@ footer .copy{
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-        #main .tree_wrap{
-            display:none;
+        .headline{
+            background-image: none;
         }
         
         #main h1{
@@ -249,9 +241,10 @@ footer .copy{
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-         #main .tree_wrap{
-                display:none;
+            .headline{
+                background-image: none;
             }
+            
 
             #main h1{
                 font-size: 34px;
