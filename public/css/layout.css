@@ -65,6 +65,18 @@ body{
     z-index: 0;
 }
 
+.headline .buttons{
+    text-align: center; 
+    padding-top: 20px;
+}
+
+
+.headline .contact-button{
+    margin-right:20px
+}
+
+
+
 #second{
     color: #333;
     width: 100%;
@@ -165,6 +177,10 @@ footer{
     padding-bottom: 5px;
 }
 
+.tree_wrap{
+    height: 100%;
+}
+
 footer {
     text-align: center;
     padding-bottom: 20px;
@@ -186,6 +202,7 @@ footer .copy{
 
 
 
+
 /* #Media Queries
 ================================================== */
 
@@ -200,6 +217,7 @@ footer .copy{
         #main h1{
             font-size: 40px;
             line-height: 1;
+            padding-top: 20px;
         }
 
 	}
@@ -214,6 +232,8 @@ footer .copy{
             font-size: 30px;
             line-height: 1;
             text-align: center;
+            padding-top: 20px;
+            
         }
 
         #main .lead{
@@ -233,6 +253,8 @@ footer .copy{
                 font-size: 34px;
                 line-height: 1;
                 text-align: center;
+                padding-top: 20px;
+                
             }
 
             #main .lead{
