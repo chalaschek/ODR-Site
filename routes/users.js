@@ -106,7 +106,7 @@ module.exports = function(app){
 
         if (data.password != data.confirm_password) {
             req.flash('error', 'Passwords do not match');
-            res.render('users/register', { user: nUser });
+            res.render('users/register', { user: data });
         } else {
             //add ip_address
             if( !data['ip_address'] ){
