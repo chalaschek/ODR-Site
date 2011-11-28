@@ -94,6 +94,8 @@ module.exports = function(app){
              res.redirect('home');
              return;
          }
+         
+         console.log(req);
          res.render('users/register', {user: new User()});
     });
 
