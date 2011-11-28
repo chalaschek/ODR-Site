@@ -1,0 +1,15 @@
+<div class="blue-back">
+    <div class="container small-header-row">
+        <div class="sixteen columns"></div>
+    </div>
+</div>
+
+<div class="container large-padding-top">
+    <div class="sixteen columns center">    
+        <h3>What are you looking for?</h3>
+        <% if(error){%>
+            <h3>We couldn't find <%=error.path%></h3>
+        <%}%>
+    </div>
+</div>    
+

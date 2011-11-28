@@ -72,6 +72,8 @@ db = mongoose.connect(app.set('connstring'));
 // Setup auth
 require('./auth')(app);
 
+require('./routes/errors')(app);
+
 
 // Routes
 require('./routes/site')(app);

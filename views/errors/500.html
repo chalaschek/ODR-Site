@@ -1,0 +1,16 @@
+<div class="blue-back">
+    <div class="container small-header-row">
+        <div class="sixteen columns"></div>
+    </div>
+</div>    
+
+<div class="container large-padding-top">
+    <div class="sixteen columns center">    
+        <h3>Ouch, we hit a snag</h3>
+        <h4>Don't worry, our team has been notified and we'll resolve the error soon!</h4>
+        <% if(error){%>
+            <h3><%=error.message%></h3>
+        <%}%>
+    </div>
+</div>    
+
