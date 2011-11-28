@@ -34,12 +34,12 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
     
     <!-- Scripts -->    
-    <script type="text/javascript" src="/js/jquery.min.js"></script> 
-    
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-dropdown.js"></script>
 </head>
 
 <body>
-    <div class="topbar">
+    <div class="topbar" data-dropdown="dropdown">
         <div class="fill">
             <div class="container">
                 <div class="sixteen columns">
@@ -47,7 +47,20 @@
                     
                     <%if(!isLoggedIn){%>
                         <p class="pull-right"><a href="/users/login">Login</a></p>
-                    <%}%>                    
+                    <%}else{%>
+                        <ul class="nav secondary-nav">
+                            <li class="dropdown">
+                                <% var user = getUser; %>
+                                <a href="#" class="dropdown-toggle"><%=user['name']%></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/users/logout">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <%}%>
                 </div>
             </div>
         </div>

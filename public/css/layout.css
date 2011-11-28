@@ -20,6 +20,7 @@
 body{
     color: #fff;
     background: #333;
+    padding-top: 40px;
 }
 
 .blue-back{
@@ -49,7 +50,6 @@ body{
 }
 
 .content-wrap{
-    padding-top: 40px;
     color: #333;
     width: 100%;
     background-color: #fff;
