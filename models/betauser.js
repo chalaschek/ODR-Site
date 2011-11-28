@@ -9,7 +9,7 @@ var crypto = require('crypto'),
     Schema = mongoose.Schema;
 
 var BetaUser = new Schema({
-    comments: {type: String, validate: [utils.Models.validatePresenceOf, 'Please tell us a litte more']},
+    comments: {type: String, validate: [utils.Models.validatePresenceOf, 'Please tell us a little more']},
     company: {type: String, validate: [utils.Models.validatePresenceOf, 'Please enter your company name']}, 
     email: {type: String, validate: [utils.Models.validateEmail, 'Please enter a valid email address']}, 
     name: {type: String, validate: [utils.Models.validatePresenceOf, 'Please enter your name']}, 
