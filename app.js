@@ -46,7 +46,7 @@ app.configure(function(){
 
 app.configure('development', function(){
     app.set('use_auth', true);
-    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+    //app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
     app.set('m_database', 'odrsite');	
     app.set('m_host', 'localhost');  
     app.set('connstring', 'mongodb://' + app.set('m_host') + '/' + app.set('m_database'));
