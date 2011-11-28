@@ -23,16 +23,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <!-- CSS -->
-    <!--<link rel="stylesheet" href="css/base.css">-->
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/bootstrap.css">    
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">    
+    <link rel="stylesheet" href="/css/layout.css">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
     
     <!-- Scripts -->    
     <script type="text/javascript" src="/js/jquery.min.js"></script> 
@@ -44,102 +43,20 @@
         <div class="fill">
             <div class="container">
                 <div class="sixteen columns">
-                    <a class="brand" href="#">Open Data Registry</a>        
-                    <p class="pull-right"><a href="#">Login</a></p>              
+                    <a class="brand" href="/">Open Data Registry</a>
+                    
+                    <%if(!isLoggedIn){%>
+                        <p class="pull-right"><a href="/users/login">Login</a></p>
+                    <%}%>                    
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    <div id="main" >
-        <div class="container">
-            <div class="headline">
-                <div class="thirteen columns">
-                    <h1>The Green Economy Platform</h1>
-                    <span class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <span class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <div class="buttons">
-                        <a href="mailto:info@opendataregistry.com" class="btn large contact-button">Contact Us</a>
-                        <a href="#" class="btn large signup-button">Beta Sign Up</a>
-                    </div>
-                </div>
 
-                <!--<div class="three columns tree_wrap">
-                    <img class="tree" src="/img/tree_small.png"></img>
-                </div>-->
-
-            </div>
-        </div>
+    <div class="content-wrap">
+        <%-body%>
     </div>
 
-
-    <div id="second">
-        <div class="container users">
-            <div class="five columns">
-                <div class="span">
-                    <h6>Brands</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="six columns">            
-                <div class="span">
-                    <h6>Suppliers</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="five columns">            
-                <div class="span">
-                    <h6>Developers</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="third">
-        <div class="container details">
-            <div class="eight columns">
-                <div class="span">
-                    <h6>App Ecosystem</h6>
-                    <div class="app">
-                        <div class="app-img">                        
-                            <img src="/img/green_earth.png"></img>
-                        </div>
-                        <div class="app-details">
-                            <span><em>Eco-Efficiency</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
-                        </div>
-                    </div>
-                    <div class="app">
-                         <div class="app-img">                        
-                             <img src="/img/green_ind.png"></img>
-                         </div>
-                         <div class="app-details">
-                             <span><em>Risk Management</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </span>
-                         </div>
-                    </div>
-                    <div class="app">
-                        <div class="app-img">                        
-                            <img src="/img/green_design.png"></img>
-                        </div>
-                        <div class="app-details">
-                            <span><em>Green Design</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="eight columns">            
-                <div class="span products">
-                    <h6>Registered Products: <em>9,864,524</em></h6>
-                    <img src="/img/map.png" class="map scale-with-grid"></img>
-                </div>
-            </div>           
-        </div>      
-    </div>
-    
     <div class="container">
      <footer>
         <span class="twitter"><a href="https://twitter.com/#!/getodr" target="_blank"><img src="/img/twitter_32.png"></img></a></span>

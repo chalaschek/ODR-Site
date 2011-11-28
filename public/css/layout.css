@@ -22,18 +22,104 @@ body{
     background: #333;
 }
 
-
-#main{
-    color: #fff;
-    width: 100%;
+.blue-back{
     background-image: url(/img/stitch.png);
     background-color: #469bad;
-    padding-top: 40px;
 }
 
+.grid-back{
+    background-image: url(/img/grid.png);
+}
+
+.gray-back{
+    background-color: #eee;    
+}
+
+.large-padding-top{
+    padding-top: 30px;
+}
+
+.header-row{
+    height: 60px;
+}
+
+
+.small-header-row{
+    height: 30px;
+}
+
+.content-wrap{
+    padding-top: 40px;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    min-height: 300px;
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+      border-top: none;
+      margin-top: 0;
+}
+
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer img{
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+footer .facebook{
+    padding-left: 10px;
+}
+
+footer .copy{
+    padding-left: 10px;
+}
+
+
+
+.messages .info div, .messages .error div{
+    margin-top: 5px;
+    margin-bottom: 5px;	
+}
+
+.messages div.info, .messages div.error{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding: 5px 10px;
+    border: 1px #2EBBE6 dashed;	
+}
+
+.messages div.info {
+    color: #2EBBE6;
+    background: #F7FBFD;
+}
+
+.messages div.error {
+    background-color: #FAF8CC;
+    color: #ad2f33;
+}
+
+
+
+
+
+/* Splash page styles
+   ================================================== */
 .headline{
     height: 350px;
-    
     background-image: url(/img/tree_small.png);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -41,7 +127,7 @@ body{
 
 
 .headline h1{
-    font-size: 50px;
+    font-size: 60px;
     line-height: 1;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
     color: #fff;
@@ -56,6 +142,12 @@ body{
     line-height: 27px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
     z-index: 1;
+    color: #fff;
+}
+
+.headline .lead a{
+    color: #fff;
+    text-decoration: underline;
 }
 
 
@@ -75,41 +167,23 @@ body{
 }
 
 
-
-#second{
+.users-wrap{
     color: #333;
     width: 100%;
-    background-image: url(/img/grid.png);
     padding: 0px 0;
     min-height: 150px;
 }
 
-#third{
+.details-wrap{
     color: #333;
-    background: #fff;
     width: 100%;
-    background-color: #eee;
     padding-top: 15px 0;
     min-height: 150px;
 }
 
 
 
-#wheat{
-    background-image: url(/img/wheat.jpg);
-    height: 40px;    
-    width: 100%;
-}
-
-footer{
-      border-top: none;
-      margin-top: 0;
-}
-
-/* #Page Styles
-================================================== */
-
-#main{
+.headline-wrap{
     min-height: 200px;
 }
 .users{
@@ -180,26 +254,12 @@ footer{
     height: 100%;
 }
 
-footer {
+.beta-thanks{
     text-align: center;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
 }
-
-footer img{
-    height: 20px;
-    position: relative;
-    top: 5px;
-}
-
-footer .facebook{
-    padding-left: 10px;
-}
-
-footer .copy{
-    padding-left: 10px;
-}
-
-
 
 
 /* #Media Queries
@@ -210,7 +270,7 @@ footer .copy{
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-        #main h1{
+        .headline-wrap h1{
             font-size: 40px;
             line-height: 1;
             padding-top: 20px;
@@ -224,7 +284,7 @@ footer .copy{
             background-image: none;
         }
         
-        #main h1{
+        .headline h1{
             font-size: 30px;
             line-height: 1;
             text-align: center;
@@ -232,11 +292,14 @@ footer .copy{
             
         }
 
-        #main .lead{
+        .headline .lead{
             font-size: 14px;
             line-height: 16px;
         }
         
+        .span6{
+            width: 250px !important;
+        }
     }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -246,7 +309,7 @@ footer .copy{
             }
             
 
-            #main h1{
+            .headline h1{
                 font-size: 34px;
                 line-height: 1;
                 text-align: center;
@@ -254,10 +317,14 @@ footer .copy{
                 
             }
 
-            #main .lead{
+            .headline .lead{
                 font-size: 16px;
                 line-height: 16px;
             }
+            .span6{
+                width: 250px !important;
+            }
+            
         
     }
 

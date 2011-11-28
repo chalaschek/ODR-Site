@@ -1,0 +1,61 @@
+<div class="blue-back">
+    <div class="container small-header-row">
+        <div class="sixteen columns"></div>
+    </div>
+</div>
+
+<div class="container large-padding-top">
+    <div class="sixteen columns">    
+        <form class="form-stacked" action="<%=base%>/beta/register" id="login_form" method="post">
+            <fieldset>
+                <legend><h2>Beta Registration</h2></legend>
+                <%- flashMessages %>
+                <div class="clearfix">
+                    <label for="company">Company</label>
+                    <div class="input">
+                        <input class="xlInput span6" type="text" name="company" id="company" value="<%=user.company || ''%>" />
+                    </div>
+                </div> 
+                <div class="clearfix">
+                    <label for="name">Name</label>
+                    <div class="input">
+                        <input class="xlInput span6" type="text" name="name" id="name" value="<%=user.name || ''%>" />
+                    </div>
+                </div>
+                                
+                <div class="clearfix">
+                    <label for="email">Email</label>
+                    <div class="input">
+                        <input class="xlInput span6" type="text" name="email" id="email" value="<%=user.email || ''%>" />
+                    </div>
+                </div> 
+
+
+                <div class="clearfix">
+                    <label for="type">Type of User</label>
+                    <div class="input">
+                        <% 
+                        var sel = user.type > 0? true : false;
+                        %>
+                        <select class="span6" name="type" id="type" >
+                            <option <%= sel? '' : 'selected="selected"'%> value="">Select User Type</option>
+                            <option <%= user.type==1? 'selected="selected"' : ''%> value="1">Brand</option>
+                            <option <%= user.type==2? 'selected="selected"' : ''%> value="2">Supplier</option>
+                            <option <%= user.type==3? 'selected="selected"' : ''%> value="3">Developer</option>
+                        </select>
+                    </div>
+                </div> 
+                
+                <div class="clearfix">
+                    <label for="comments">Tell us a little more about your company</label>
+                    <div class="input">
+                        <textarea rows="3" class="xlInput span6" name="comments" id="comments"><%=user.comments || ''%></textarea>
+                    </div>
+                </div> 
+            </fieldset>
+            <div class="actions">
+                <input class="btn" type="submit" value="Sign Up" />
+            </div>
+        </form> 
+    </div>
+</div> 
