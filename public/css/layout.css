@@ -36,6 +36,10 @@ body{
     background-color: #eee;    
 }
 
+.gray{
+    color: #ddd;
+}
+
 .large-padding-top{
     padding-top: 30px;
 }
@@ -127,7 +131,7 @@ footer .copy{
 
 
 .headline h1{
-    font-size: 60px;
+    font-size: 55px;
     line-height: 1;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
     color: #fff;
@@ -234,6 +238,7 @@ footer .copy{
 .details .app{
     width: 100%;
     height: 50px;
+    font-size: 13px;
 }
 
 .details .app-img img{
@@ -245,9 +250,14 @@ footer .copy{
 }
 
 .details .app-details{
-    padding-left: 10px;
+    padding-left: 7px;
     width: 85%;
     padding-bottom: 5px;
+    padding-top: 6px;
+}
+
+.details .app-details b{
+    padding-right: 5px;
 }
 
 .tree_wrap{
@@ -275,12 +285,15 @@ footer .copy{
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-        .headline-wrap h1{
-            font-size: 40px;
+	    .headline{
+            height: 370px;
+        }
+        
+        .headline h1{
+            font-size: 45px;
             line-height: 1;
             padding-top: 20px;
         }
-        
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -288,6 +301,7 @@ footer .copy{
         .headline{
             background-image: none;
         }
+        
         
         .headline h1{
             font-size: 30px;
