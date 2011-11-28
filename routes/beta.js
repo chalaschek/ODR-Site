@@ -15,7 +15,8 @@ module.exports = function(app){
 
         //add ip_address
         if( !data['ip_address'] ){
-            data['ip_address'] = req.connection.remoteAddress;
+            //data['ip_address'] = req.connection.remoteAddress;
+            data['ip_address'] = req.headers['x-real-ip'];
         }
 
         //create user

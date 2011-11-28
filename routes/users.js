@@ -95,7 +95,7 @@ module.exports = function(app){
              return;
          }
          
-         console.log(req);
+         //console.log(req);
          res.render('users/register', {user: new User()});
     });
 
@@ -104,7 +104,6 @@ module.exports = function(app){
      */
     app.post('/users/register', app.AuthHelper.isValidUser, app.AuthHelper.isAdminUser, function(req, res){
         var data = req.body;
-        console.log(data.password +  "  " + data.confirm_password);
 
         if (data.password != data.confirm_password) {
             req.flash('error', 'Passwords do not match');
@@ -112,7 +111,8 @@ module.exports = function(app){
         } else {
             //add ip_address
             if( !data['ip_address'] ){
-                data['ip_address'] = req.connection.remoteAddress;
+                //data['ip_address'] = req.connection.remoteAddress;
+                data['ip_address'] = req.headers['x-real-ip'];
             }
 
             if( data['confirm_password']  ){
