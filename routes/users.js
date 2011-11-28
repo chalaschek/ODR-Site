@@ -70,7 +70,7 @@ module.exports = function(app){
                         if( redirect ){
                             res.redirect( redirect );
                         }else{
-                            res.redirect('/');
+                            res.redirect('home');
                         }
                     });
                 } else {
@@ -91,7 +91,7 @@ module.exports = function(app){
     app.get('/users/register', app.AuthHelper.isValidUser, app.AuthHelper.isAdminUser, function(req, res){	
          //check if already logged in
          if( req.session.user_id ){
-             res.redirect('/');
+             res.redirect('home');
              return;
          }
          res.render('users/register', {user: new User()});
@@ -132,7 +132,7 @@ module.exports = function(app){
                 }else{
                     req.session.user_id = nUser.id;	    
                     //TODO: redirect to success page
-                    res.redirect('/');
+                    res.redirect('home');
                 }
             });
         }
