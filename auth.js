@@ -10,7 +10,7 @@ module.exports = function(app){
 
     //admin list
     //TODO: this should be pushed into the DB
-    app.AuthHelper.adminList = {'chris.halaschek@opendataregistry.com':1};
+    app.AuthHelper.adminList = {'chris.halaschek@opendataregistry.com':1, 'jeff.stein@opendataregistry.com':1};
 
     app.AuthHelper.checkAdminUser = function(user) {
         if( !app.set("use_auth") ){
