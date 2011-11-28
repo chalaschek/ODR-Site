@@ -33,10 +33,10 @@ module.exports = function(app){
                 res.render('beta/register', { user: nUser});	
             }else{
 
-                /*//queue the notification email
+                //queue the notification email
                 if (app.set('disableRegistrationEmails') != true){
                     app.emailHelper.queueBetaRegistrationEmail( nUser );
-                }*/
+                }
 
                 //TODO: redirect to success page
                 res.render('beta/thanks');	    

@@ -81,6 +81,10 @@ require('./routes/users')(app);
 require('./routes/beta')(app);
 
 
+//setup email notifications
+require('./email')(app);
+
+
 // Only listen on $ node app.js
 if (!module.parent) {
     app.listen(3002);

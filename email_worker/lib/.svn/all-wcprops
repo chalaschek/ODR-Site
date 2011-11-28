@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/node-queue-worker/!svn/ver/2/trunk/lib
+END
+beanstalk_worker_cluster.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/node-queue-worker/!svn/ver/2/trunk/lib/beanstalk_worker_cluster.js
+END
