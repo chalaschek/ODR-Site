@@ -64,6 +64,10 @@ body{
     text-align: center;
 }
 
+.center-margin{
+    margin: 0 auto;
+}
+
 footer{
       border-top: none;
       margin-top: 0;
@@ -185,6 +189,11 @@ footer .copy{
     min-height: 150px;
 }
 
+.customer{
+    width: 31.5%;
+    float: left;
+    padding: 0 7px;
+}
 
 
 .headline-wrap{
@@ -323,6 +332,11 @@ footer .copy{
         .centered-form{
             width: 290px;
         }
+        
+        .customer{
+            width: 100%;
+        }
+        
     }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
