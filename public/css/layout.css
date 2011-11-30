@@ -254,15 +254,27 @@ footer .copy{
     width: 30px;
 }
 
-.details .app-img, .details .app-details{
+.details .app-img, .details .app-details, .details .app-header{
     float:left;
 }
 
-.details .app-details{
+.details .app-header{
     padding-left: 7px;
-    width: 85%;
+    font-weight: bold;
+    width: 8%;
+    text-align: center;
+    padding-right: 2px;
     padding-bottom: 5px;
     padding-top: 6px;
+}
+
+
+
+.details .app-details{
+    padding-left: 7px;
+    width: 78%;
+    padding-bottom: 5px;
+    padding-top: 7px;
 }
 
 .details .app-details b{
@@ -309,6 +321,7 @@ footer .copy{
 	@media only screen and (max-width: 767px) {
         .headline{
             background-image: none;
+            height: 350px;            
         }
         
         
@@ -336,6 +349,15 @@ footer .copy{
         .customer{
             width: 100%;
         }
+
+        .details .app-header{
+            width: 10%;
+        }
+
+        
+        .details .app-details{
+            width: 70%;
+        }
         
     }
 
@@ -343,6 +365,7 @@ footer .copy{
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
             .headline{
                 background-image: none;
+                height: 310px;            
             }
             
 
