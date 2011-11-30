@@ -9,7 +9,7 @@ process.on('TERM', function() {
 });
 
 var options = {
-  workers: 3,
+  workers: 1,
   server: '127.0.0.1:11300',
   tubes: ['email'],
   ignore_default: true,
