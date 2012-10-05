@@ -1,27 +1,65 @@
 # ODR Site
 
-# System dependencies
+## System dependencies
 
-TODO: add this
+Node.js, Express.js, mongodb
 
-# Install Node.js dependencies
+## Installation
+
+### Node.js
+
+Install node.js. See http://nodejs.org/
+
+### Checkout code from GitHub
+
+% git clone git@github.com:chalaschek/ODR-Site.git
+
+### Install Forever
+
+% npm install forever
+
+### Install app node.js dependencies
+
+Change working directory to ODR-Site. Then run from this directory:
 
 $ npm install
 
-# Start up MongoDB
-
-Start Mongodb on port 27017.
-
-$ /etc/mongo/binmongod --journal --fork --logpath /var/log/mongod.log --dbpath /mnt/odrebs/data/db
-
-# Start beanstalkd
-
-$ beanstalkd -p 11300 -b /var/log/beanstalkd/ -f 0 -d
-
-# Start main web application
+### Start main web application
 
 $ forever start app.js
 
-# Start email workes
+## Additional installation
+
+### Install MongoDB
+
+See http://www.mongodb.org/
+
+### Start up MongoDB
+
+Start Mongodb on port 27017.
+
+#### Local development
+
+$ mongod --journal --fork
+
+#### Production
+
+$ /etc/mongo/bin/mongod --journal --fork --logpath /var/log/mongod.log --dbpath /mnt/odrebs/data/db
+
+### Install beanstalk
+
+See http://kr.github.com/beanstalkd/
+
+#### Start beanstalkd
+
+#### Local development
+
+$ beanstalkd -p 11300 -f 0 -d
+
+#### Production
+
+$ beanstalkd -p 11300 -b /var/log/beanstalkd/ -f 0 -d
+
+### Start email workers
 
 $ forever start email_worker/email_queue.js
