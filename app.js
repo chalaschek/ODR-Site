@@ -6,15 +6,9 @@
 var express = require('express'),
     mongoose = require('mongoose'),
     utils = require('./utils'),
+    http = require('http'),
     messages = require('express-messages');
 
-
-
-// handle uncaught exceptions
-/*process.on('uncaughtException', function(err) {
-    console.log('Uncaught exception: ' + err);
-    process.exit(0);
-});*/
 
 // create server
 var app = module.exports = express.createServer();
@@ -83,7 +77,6 @@ require('./routes/beta')(app);
 
 //setup email notifications
 require('./email')(app);
-
 
 // Only listen on $ node app.js
 if (!module.parent) {
