@@ -4,22 +4,24 @@
 
 TODO: add this
 
-# Install
+# Install Node.js dependencies
 
-Install node.js dependencies
-    $ npm install
+$ npm install
 
+# Start up MongoDB
 
 Start Mongodb on port 27017.
 
-    $ /etc/mongo/binmongod --journal --fork --logpath /var/log/mongod.log --dbpath /mnt/odrebs/data/db
+$ /etc/mongo/binmongod --journal --fork --logpath /var/log/mongod.log --dbpath /mnt/odrebs/data/db
 
-Start beanstalkd on port 11300.
+# Start beanstalkd
 
-    $ beanstalkd -p 11300 -b /var/log/beanstalkd/ -f 0 -d
+$ beanstalkd -p 11300 -b /var/log/beanstalkd/ -f 0 -d
 
-Start primary web app
-    $ forever start app.js
+# Start main web application
 
-Start primary web app
-    $ forever start email_worker/email_queue.js
+$ forever start app.js
+
+# Start email workes
+
+$ forever start email_worker/email_queue.js
