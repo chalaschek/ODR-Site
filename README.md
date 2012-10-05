@@ -12,11 +12,11 @@ Install node.js. See http://nodejs.org/
 
 ### Checkout code from GitHub
 
-% git clone git@github.com:chalaschek/ODR-Site.git
+$ git clone git@github.com:chalaschek/ODR-Site.git
 
 ### Install Forever
 
-% npm install forever
+$ npm install forever
 
 ### Install app node.js dependencies
 
