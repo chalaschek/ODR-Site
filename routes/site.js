@@ -10,5 +10,12 @@ module.exports = function(app){
             res.render('splash');
         }
     });
-    
+    app.get('/jobs/FSEngineer.html', function(req, res){
+      res.render('jobs/FSEngineer');
+    });
+    app.get('/jobs/UXDesign.html', function(req, res){
+      res.render('jobs/UXDesign');
+    });
 };
+
+
