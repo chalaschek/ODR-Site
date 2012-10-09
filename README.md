@@ -62,4 +62,4 @@ $ beanstalkd -p 11300 -b /var/log/beanstalkd/ -f 0 -d
 
 ### Start email workers
 
-$ forever start email_worker/email_queue.js
+$ forever start email_worker/emailer_queue.js
