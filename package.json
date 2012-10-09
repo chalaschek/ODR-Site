@@ -3,7 +3,7 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
-      "express": "2.4.7"
+      "express": "2.x.x"
     , "jade": ">= 0.0.1"
     , "mongoose" : "2.x.x"
     , "beanstalk_client" : "0.2.0"
