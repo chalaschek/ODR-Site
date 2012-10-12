@@ -16,6 +16,9 @@ module.exports = function(app){
     app.get('/jobs/UXDesign.html', function(req, res){
       res.render('jobs/UXDesign');
     });
+    app.get('/jobs/careers.html', function(req, res){
+      res.render('jobs/careers');
+    });
 };
 
 
